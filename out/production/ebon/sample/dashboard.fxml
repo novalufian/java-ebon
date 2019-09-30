@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="768.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <SplitPane dividerPositions="0.23708920187793428" focusTraversable="true" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <items>
+        <AnchorPane prefHeight="766.0" prefWidth="199.0" style="-fx-background-color: #1089ff;">
+          <children>
+                  <Pane prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: #064acb;" />
+            <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" minWidth="60.0" prefWidth="-1.0" style="&#10;" text="Dashboard" textAlignment="CENTER" textFill="WHITE" wrapText="false">
+              <font>
+                <Font size="18.0" fx:id="x1" />
+              </font>
+            </Label>
+                  <Pane layoutY="79.0" onMouseClicked="#openMenuContainer" prefHeight="50.0" prefWidth="300.0">
+                     <children>
+                        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="66.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 900; -fx-font-size: 14px;" text="Blok lapas">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="40.0" fitWidth="30.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@src/img/png/007-home.png" />
+                           </image></ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutY="129.0" onMouseClicked="#openMenuContainer" prefHeight="50.0" prefWidth="300.0">
+                     <children>
+                        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="66.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 900; -fx-font-size: 14px;" text="Bon napi">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="40.0" fitWidth="30.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@src/img/png/002-add%20user.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutY="179.0" onMouseClicked="#openMenuContainer" prefHeight="50.0" prefWidth="300.0">
+                     <children>
+                        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="66.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 900; -fx-font-size: 14px;" text="Riwayat bon napi">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="40.0" fitWidth="30.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@src/img/png/013-photo%20album.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutY="279.0" onMouseClicked="#openMenuContainer" prefHeight="50.0" prefWidth="300.0">
+                     <children>
+                        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="66.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 900; -fx-font-size: 14px;" text="User client">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="40.0" fitWidth="30.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@src/img/png/006-group.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutY="329.0" onMouseClicked="#openMenuContainer" prefHeight="50.0" prefWidth="300.0">
+                     <children>
+                        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="66.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 900; -fx-font-size: 14px;" text="User admin">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="40.0" fitWidth="30.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@src/img/png/005-customer.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutY="429.0" onMouseClicked="#openMenuContainer" prefHeight="50.0" prefWidth="300.0">
+                     <children>
+                        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="66.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 900; -fx-font-size: 14px;" text="Data pegawai">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="40.0" fitWidth="30.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@src/img/png/011-love.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutY="479.0" onMouseClicked="#openMenuContainer" prefHeight="50.0" prefWidth="300.0">
+                     <children>
+                        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="66.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 900; -fx-font-size: 14px;" text="Data napi">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="40.0" fitWidth="30.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@src/img/png/001-add.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="1.0" layoutY="529.0" onMouseClicked="#openMenuContainer" prefHeight="50.0" prefWidth="300.0">
+                     <children>
+                        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="66.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 900; -fx-font-size: 14px;" text="Data subagian">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="40.0" fitWidth="30.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@src/img/png/015-share.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutY="579.0" onMouseClicked="#openMenuContainer" prefHeight="50.0" prefWidth="300.0">
+                     <children>
+                        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="66.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 900; -fx-font-size: 14px;" text="Data blok &amp; kamar">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="40.0" fitWidth="30.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@src/img/png/016-shop.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+          </children>
+        </AnchorPane>
+        <ScrollPane prefHeight="-1.0" prefWidth="-1.0">
+          <content>
+            <AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="766.0" prefWidth="969.0">
+              <children>
+                <Label alignment="CENTER" font="$x1" layoutX="14.0" layoutY="14.0" style="&#10;" text="View" textAlignment="CENTER" textFill="$x2" wrapText="false" />
+              </children>
+            </AnchorPane>
+          </content>
+        </ScrollPane>
+      </items>
+    </SplitPane>
+  </children>
+</VBox>
