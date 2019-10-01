@@ -9,7 +9,7 @@
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-<VBox prefHeight="768.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<VBox prefHeight="768.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
     <children>
           <AnchorPane prefHeight="800.0">
               <children>
@@ -29,7 +29,7 @@
                           </Text>
                           <ImageView fitHeight="40.0" fitWidth="30.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                               <image>
-                                  <Image url="@img/png/007-home.png" />
+                                  <Image url="@../img/png/007-home.png" />
                               </image>
                   </ImageView>
                       </children>
@@ -43,7 +43,7 @@
                           </Text>
                           <ImageView fitHeight="40.0" fitWidth="30.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                               <image>
-                                  <Image url="@img/png/002-add-user.png" />
+                                  <Image url="@../img/png/002-add-user.png" />
                               </image>
                           </ImageView>
                       </children>
@@ -57,7 +57,7 @@
                           </Text>
                           <ImageView fitHeight="40.0" fitWidth="30.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                               <image>
-                                  <Image url="@img/png/013-photo-album.png" />
+                                  <Image url="@../img/png/013-photo-album.png" />
                               </image>
                           </ImageView>
                       </children>
@@ -71,7 +71,7 @@
                           </Text>
                           <ImageView fitHeight="40.0" fitWidth="30.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                               <image>
-                                  <Image url="@img/png/006-group.png" />
+                                  <Image url="@../img/png/006-group.png" />
                               </image>
                           </ImageView>
                       </children>
@@ -85,7 +85,7 @@
                           </Text>
                           <ImageView fitHeight="40.0" fitWidth="30.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                               <image>
-                                  <Image url="@img/png/005-customer.png" />
+                                  <Image url="@../img/png/005-customer.png" />
                               </image>
                           </ImageView>
                       </children>
@@ -99,7 +99,7 @@
                           </Text>
                           <ImageView fitHeight="40.0" fitWidth="30.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                               <image>
-                                  <Image url="@img/png/011-love.png" />
+                                  <Image url="@../img/png/011-love.png" />
                               </image>
                           </ImageView>
                       </children>
@@ -113,7 +113,7 @@
                           </Text>
                           <ImageView fitHeight="40.0" fitWidth="30.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                               <image>
-                                  <Image url="@img/png/001-add.png" />
+                                  <Image url="@../img/png/001-add.png" />
                               </image>
                           </ImageView>
                       </children>
@@ -127,7 +127,7 @@
                           </Text>
                           <ImageView fitHeight="40.0" fitWidth="30.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                               <image>
-                                  <Image url="@img/png/015-share.png" />
+                                  <Image url="@../img/png/015-share.png" />
                               </image>
                           </ImageView>
                       </children>
@@ -141,7 +141,7 @@
                           </Text>
                           <ImageView fitHeight="40.0" fitWidth="30.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                               <image>
-                                  <Image url="@img/png/016-shop.png" />
+                                  <Image url="@../img/png/016-shop.png" />
                               </image>
                           </ImageView>
                       </children>
