@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.*?>
 <?import javafx.scene.image.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -9,9 +10,9 @@
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-<VBox prefHeight="768.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefHeight="768.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
     <children>
-          <AnchorPane prefHeight="800.0">
+          <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="800.0">
               <children>
             <Pane maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="1200.0" prefWidth="300.0" style="-fx-background-color: #1089ff;" />
                   <Pane prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: #064acb;" />
@@ -20,12 +21,15 @@
                           <Font size="18.0" fx:id="x1" />
                       </font>
                   </Label>
-                  <Pane layoutY="79.0" prefHeight="50.0" prefWidth="300.0">
+                  <Pane layoutY="79.0" onMouseEntered="#hoverMenu" onMouseExited="#exitHoverMenu" prefHeight="50.0" prefWidth="300.0">
                       <children>
                           <Text fill="WHITE" fontSmoothingType="LCD" layoutX="66.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 900; -fx-font-size: 14px;" text="Blok lapas">
                               <font>
                                   <Font size="14.0" />
                               </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                           </Text>
                           <ImageView fitHeight="40.0" fitWidth="30.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                               <image>
@@ -34,7 +38,7 @@
                   </ImageView>
                       </children>
                   </Pane>
-                  <Pane layoutY="129.0" prefHeight="50.0" prefWidth="300.0">
+                  <Pane layoutY="129.0" onMouseEntered="#hoverMenu" onMouseExited="#exitHoverMenu" prefHeight="50.0" prefWidth="300.0">
                       <children>
                           <Text fill="WHITE" fontSmoothingType="LCD" layoutX="66.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 900; -fx-font-size: 14px;" text="Bon napi">
                               <font>
@@ -47,8 +51,11 @@
                               </image>
                           </ImageView>
                       </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
                   </Pane>
-                  <Pane layoutY="179.0" prefHeight="50.0" prefWidth="300.0">
+                  <Pane layoutY="179.0" onMouseEntered="#hoverMenu" onMouseExited="#exitHoverMenu" prefHeight="50.0" prefWidth="300.0">
                       <children>
                           <Text fill="WHITE" fontSmoothingType="LCD" layoutX="66.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 900; -fx-font-size: 14px;" text="Riwayat bon napi">
                               <font>
@@ -61,8 +68,11 @@
                               </image>
                           </ImageView>
                       </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
                   </Pane>
-                  <Pane layoutY="279.0" prefHeight="50.0" prefWidth="300.0">
+                  <Pane layoutY="279.0" onMouseEntered="#hoverMenu" onMouseExited="#exitHoverMenu" prefHeight="50.0" prefWidth="300.0">
                       <children>
                           <Text fill="WHITE" fontSmoothingType="LCD" layoutX="66.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 900; -fx-font-size: 14px;" text="User client">
                               <font>
@@ -75,8 +85,11 @@
                               </image>
                           </ImageView>
                       </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
                   </Pane>
-                  <Pane layoutY="329.0" prefHeight="50.0" prefWidth="300.0">
+                  <Pane layoutY="329.0" onMouseEntered="#hoverMenu" onMouseExited="#exitHoverMenu" prefHeight="50.0" prefWidth="300.0">
                       <children>
                           <Text fill="WHITE" fontSmoothingType="LCD" layoutX="66.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 900; -fx-font-size: 14px;" text="User admin">
                               <font>
@@ -89,8 +102,11 @@
                               </image>
                           </ImageView>
                       </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
                   </Pane>
-                  <Pane layoutY="429.0" prefHeight="50.0" prefWidth="300.0">
+                  <Pane layoutY="429.0" onMouseEntered="#hoverMenu" onMouseExited="#exitHoverMenu" prefHeight="50.0" prefWidth="300.0">
                       <children>
                           <Text fill="WHITE" fontSmoothingType="LCD" layoutX="66.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 900; -fx-font-size: 14px;" text="Data pegawai">
                               <font>
@@ -103,8 +119,11 @@
                               </image>
                           </ImageView>
                       </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
                   </Pane>
-                  <Pane layoutY="479.0" prefHeight="50.0" prefWidth="300.0">
+                  <Pane layoutY="479.0" onMouseEntered="#hoverMenu" onMouseExited="#exitHoverMenu" prefHeight="50.0" prefWidth="300.0">
                       <children>
                           <Text fill="WHITE" fontSmoothingType="LCD" layoutX="66.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 900; -fx-font-size: 14px;" text="Data napi">
                               <font>
@@ -117,8 +136,11 @@
                               </image>
                           </ImageView>
                       </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
                   </Pane>
-                  <Pane layoutX="1.0" layoutY="529.0" prefHeight="50.0" prefWidth="300.0">
+                  <Pane layoutX="1.0" layoutY="529.0" onMouseEntered="#hoverMenu" onMouseExited="#exitHoverMenu" prefHeight="50.0" prefWidth="300.0">
                       <children>
                           <Text fill="WHITE" fontSmoothingType="LCD" layoutX="66.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 900; -fx-font-size: 14px;" text="Data subagian">
                               <font>
@@ -131,8 +153,11 @@
                               </image>
                           </ImageView>
                       </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
                   </Pane>
-                  <Pane layoutY="579.0" prefHeight="50.0" prefWidth="300.0">
+                  <Pane layoutY="579.0" onMouseEntered="#hoverMenu" onMouseExited="#exitHoverMenu" prefHeight="50.0" prefWidth="300.0">
                       <children>
                           <Text fill="WHITE" fontSmoothingType="LCD" layoutX="66.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 900; -fx-font-size: 14px;" text="Data blok &amp; kamar">
                               <font>
@@ -145,7 +170,22 @@
                               </image>
                           </ImageView>
                       </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
                   </Pane>
+            <AnchorPane layoutX="300.0" prefHeight="1200.0" prefWidth="997.0">
+               <children>
+                  <TableView fx:id="table_user_login" layoutX="39.0" layoutY="137.0" prefHeight="513.0" prefWidth="707.0">
+                    <columns>
+                      <TableColumn fx:id="cell_no" prefWidth="114.0" text="NO" />
+                      <TableColumn fx:id="cell_username" prefWidth="211.0" text="username" />
+                        <TableColumn fx:id="cell_password" prefWidth="197.0" text="password" />
+                        <TableColumn fx:id="cell_action" prefWidth="184.0" text="action" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
               </children>
           </AnchorPane>
     </children>

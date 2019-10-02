@@ -3,16 +3,19 @@ package application;
 import connectifity.ConnectionClass;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.geometry.Rectangle2D;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 
-import java.sql.Connection;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.io.IOException;
+import java.sql.*;
 
 public class LoginController {
 
@@ -30,7 +33,9 @@ public class LoginController {
     @FXML
     private Button btnLogin;
 
-    public void loginAction(ActionEvent actionEvent) throws SQLException {
+    ResultSet rsLogin = null;
+
+    public void loginAction(ActionEvent actionEvent) throws SQLException, IOException {
         String pass = password.getText();
         String uname = username.getText();
         System.out.println(uname + " dan "+ pass);
@@ -38,21 +43,40 @@ public class LoginController {
         ConnectionClass connectionClass = new ConnectionClass();
         Connection connection = connectionClass.getConnection();
 
-        String sql = "INSERT INTO table1 VALUES('"+uname +"')";
-        System.out.println(connection);
+//        String sql = "INSERT INTO table1 VALUES('"+uname +"')";
 
-        Statement statement = connection.createStatement();
-        statement.executeUpdate(sql);
+        try {
+            String sqlLogin = "SELECT * FROM login WHERE username = ? AND password = ?";
+            PreparedStatement preparedStatement = connection.prepareStatement(sqlLogin);
+            preparedStatement.setString(1, uname);
+            preparedStatement.setString(2, pass);
+            rsLogin = preparedStatement.executeQuery();
 
-        curentStage = Main.getStage();
+            if (rsLogin.next()){
+                curentStage = Main.getStage();
+                curentStage.setMaximized(true);
 
-        Screen screen = Screen.getPrimary();
-        Rectangle2D bounds = screen.getVisualBounds();
+                Parent dashboard = FXMLLoader.load(getClass().getResource("views/sample.fxml"));
+                curentStage.setScene(new Scene(dashboard));
+                curentStage.show();
+            }else{
+                Alert alert = new Alert(Alert.AlertType.WARNING);
+                alert.setTitle("Login gagal");
+                alert.setHeaderText("username atau password anda salah");
+                alert.showAndWait();
+            }
 
-        curentStage.setX(bounds.getMinX());
-        curentStage.setY(bounds.getMinY());
-        curentStage.setWidth(bounds.getWidth());
-        curentStage.setHeight(bounds.getHeight());
+        }catch (Exception e ){
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("Login gagal");
+            alert.setHeaderText("Tolong periksa koneksi anda");
+            alert.showAndWait();
+            e.printStackTrace();
+        }
+
+
+
+
 
     }
 
